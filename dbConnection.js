@@ -2,7 +2,7 @@
 const { MongoClient } = require('mongodb');
 async function main(){
     //in line 5, mongo gives uri like username:<password>. You have to delete > and < and write your real password so that you don't take an authentication fail.
-    const uri = "mongodb+srv://username:<password>@cluster0.fzzvq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+    const uri = ""; //You have to get a uri from MongoDB atlas and put it in this line.
     const client = new MongoClient(uri);
     
     try{
